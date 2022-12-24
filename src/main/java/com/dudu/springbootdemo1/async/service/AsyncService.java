@@ -14,7 +14,6 @@ import java.util.concurrent.Future;
 @Service
 public class AsyncService {
 
-
     public void async()  {
             test1();
             test2();

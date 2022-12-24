@@ -1,4 +1,4 @@
-package com.dudu.springbootdemo1.thread;
+package com.dudu.springbootdemo1.async.thread;
 
 import java.util.concurrent.RecursiveTask;
 
