@@ -81,6 +81,9 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="query" resultMap="BaseResultMap" parameterType="String" >
+    select * from student where  course = #{course,jdbcType=VARCHAR};
+  </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
     select 
     <include refid="Base_Column_List" />

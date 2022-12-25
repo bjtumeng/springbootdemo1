@@ -36,4 +36,9 @@ public class Usercontroller {
     public Student queryUser(){
         return userService.queryUser();
     }
+
+    @GetMapping("/custom")
+    public Student queryCustomUser(){
+        return userService.queryCustomUser();
+    }
 }

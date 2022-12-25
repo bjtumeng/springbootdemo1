@@ -16,6 +16,8 @@ public interface StudentMapper {
 
     int insertSelective(Student record);
 
+    List<Student> query(String name);
+
     List<Student> selectByExample(StudentExample example);
 
     Student selectByPrimaryKey(@Param("name") String name, @Param("course") String course);

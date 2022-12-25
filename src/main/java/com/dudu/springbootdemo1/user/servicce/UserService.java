@@ -38,4 +38,10 @@ public class UserService {
         List<Student> students = studentMapper.selectByExample(studentExample);
         return students.get(0);
     }
+
+    public Student queryCustomUser(){
+        String name ="数学";
+        List<Student> students = studentMapper.query(name);
+        return students.get(0);
+    }
 }
