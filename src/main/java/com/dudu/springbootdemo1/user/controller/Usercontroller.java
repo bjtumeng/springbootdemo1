@@ -1,6 +1,7 @@
 package com.dudu.springbootdemo1.user.controller;
 
 import com.dudu.springbootdemo1.domain.User;
+import com.dudu.springbootdemo1.domain.student.Student;
 import com.dudu.springbootdemo1.user.servicce.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,5 +31,9 @@ public class Usercontroller {
         User user2 = userService.getUser2();
         System.out.println("信息为："+user2.getUsername());
         return "success";
+    }
+    @GetMapping("/query")
+    public Student queryUser(){
+        return userService.queryUser();
     }
 }
